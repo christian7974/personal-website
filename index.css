@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 #title {
     background-color: #2c2a4a;
     color: #FAFAFF;
@@ -7,6 +11,20 @@
 #portfolio {
     background-color: #e4d9ff;
     color: #040406;
+}
+
+#skills {
+    background-color: #2c2a4a;
+}
+
+#about-me {
+    background-color: #e4d9ff;
+    color: #040406;
+}
+
+#contact-me {
+    background-color: #2c2a4a;
+    color: #FAFAFF;
 }
 
 .container-fluid {
@@ -46,3 +64,39 @@ h2.portfolio-footer {
     padding-top: 50px;
     text-align: center;
 }
+
+h1.contact-header {
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 100px;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.social-icon {
+    height: 90px;
+    width: auto;
+}
+
+.form-label {
+    margin-bottom: -30px;
+    color:#FAFAFF;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#comments-area {
+    margin-top: 50px;
+}
+
+.contact-info {
+    padding-left: 200px;
+}
+
+li {
+    font-size: 20px;
+}
+
