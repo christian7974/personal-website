@@ -20,6 +20,7 @@ p {
 
 #skills {
     background-color: #2c2a4a;
+    color: #FAFAFF;
 }
 
 #about-me {
@@ -71,11 +72,26 @@ h2.portfolio-footer {
     padding-top: 50px;
     text-align: center;
 }
-
-h1.contact-header {
+/* Also used for the Skills header */
+h1.contact-header { 
     text-align: center;
     font-size: 72px;
     margin-bottom: 100px;
+}
+
+#languages-frameworks-btn-group {
+    width: 25%;
+    margin: auto;
+}
+
+#skills-in-langauges {
+    height: 10px;
+    display: auto;
+}
+
+#skills-in-frameworks {
+    height: 10px;
+    display: none;
 }
 
 h1.about-me-header {

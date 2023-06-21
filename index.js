@@ -1,4 +1,15 @@
-$("#spinning-record").on("click", function() {
-   var audio = new Audio('https://youtu.be/e2rg1EBn8aI')
-   audio.play();
-});
+const langauges_skills_btn = document.getElementById("languages-btn");
+
+const frameworks_skills_btn = document.getElementById("frameworks-btn");
+
+var on_languages = true;
+function showLanguagesDiv() {
+    console.log("showLanguagesDiv");
+    
+}
+
+function showFrameworksDiv() {
+    console.log("showFrameworksdiv");
+}
+langauges_skills_btn.addEventListener('click', showLanguagesDiv);
+frameworks_skills_btn.addEventListener('click', showFrameworksDiv);
