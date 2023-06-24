@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="skills.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
 </head>
 
@@ -85,18 +86,35 @@
 
     <section id="skills">
         <div class="container-fluid">
+            
+            <h1 class="skills-header">Skills</h1>
+            
             <div class="row">
-                <h1 class="contact-header">Skills</h1>
                 <div class="btn-group" role="group" aria-label="Basic example" id="languages-frameworks-btn-group">
                     <button type="button" class="btn btn-primary" id="languages-btn">Langauges</button>
                     <button type="button" class="btn btn-primary" id="frameworks-btn">Frameworks</button>
                 </div>
             </div>
-            <div id="skills-in-languages">
-                languages
-            </div>
-            <div id="skills-in-frameworks">
-                frameworks
+            <div class="row">
+                <div id="skills-in-languages"> 
+                    <div id="language-pictures-column"> <!-- Put pictures, names of languages here -->
+                        <img src="assets/skills/python_logo.png" class="skills-picture" alt="Image of the Python Logo">
+                        <img src="assets/skills/c++_logo.png" class="skills-picture" alt="Image of the Python Logo">
+                        <img src="assets/skills/ferris_rust.png" class="skills-picture" alt="Image of the Python Logo">
+                        <img src="assets/skills/html_css_logo.jpg" class="skills-picture" alt="Image of the Python Logo">
+                        <img src="assets/skills/js_logo.png" class="skills-picture" alt="Image of the Python Logo">
+                    </div>
+                    <div id="axes">
+                        
+                        <div id="y-axis"></div>
+                        <div id="x-axis">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="skills-in-frameworks">
+                    frameworks/other
+                </div>
             </div>
         </div>
     </section>

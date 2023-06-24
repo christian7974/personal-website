@@ -3,7 +3,6 @@ const frameworks_skills_btn = document.getElementById("frameworks-btn");
 const languages_div = document.getElementById("skills-in-languages");
 const frameworks_div = document.getElementById("skills-in-frameworks");
 
-console.log(frameworks_div);
 var on_languages = true;
 function showLanguagesDiv() {
     frameworks_div.style.display = 'none';

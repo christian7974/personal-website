@@ -74,23 +74,26 @@ h2.portfolio-footer {
 }
 /* Also used for the Skills header */
 h1.contact-header { 
-    text-align: center;
-    font-size: 72px;
+
     margin-bottom: 100px;
 }
 
+h1.skills-header {
+    text-align: center;
+    font-size: 72px;
+}
+
 #languages-frameworks-btn-group {
-    width: 25%;
     margin: auto;
+    width: 25%;
 }
 
 #skills-in-langauges {
-    height: 10px;
-    display: auto;
+    height: 100px;
 }
 
 #skills-in-frameworks {
-    height: 10px;
+    height: 100px;
     display: none;
 }
 
