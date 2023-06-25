@@ -36,43 +36,53 @@
     height: 15px;
     border-radius: 0 10px 10px 0;
 }
+#x-axis-labels {
+    /* background-color: aqua; */
+    font-size: 23px;
+    height: 10px;
+    display: flex;
+    padding-left: 85px;
+    width: 100%;
+}
+
+#novice-label {
+    margin-right: 33%;
+}
+
+#proficient-label {
+    margin-right: 33%;
+}
+
 /* Bars for Skills */
 .skill-bar {
     position: relative;
     left: 15px;
     border-radius: 0 10px 10px 0;
     margin-bottom: 10px;
+    height: 17px;
+    background-color: gray;
 }
 
+
 #python-skill-bar {
-    background-color: red;
-    width: 90%;
-    height: 15px;
+    width: 70%;
     bottom: 475px;
 }
 #cpp-skill-bar {
-    background-color: green;
-    width: 80%;
-    height: 15px;
+    width: 45%;
     bottom: 400px;
 }
 #rust-skill-bar {
-    background-color: purple;
-    width: 60%;
-    height: 15px;;
+    width: 35%;
     bottom: 325px;
 }
 
 #html-skill-bar {
-    background-color: magenta;
-    width: 75%;
-    height: 15px;;
+    width: 60%;
     bottom: 250px;
 }
 
 #js-skill-bar {
-    background-color: violet;
     width: 80%;
-    height: 15px;;
     bottom: 175px;
 }

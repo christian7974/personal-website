@@ -11,3 +11,7 @@ Skills I Want Under Frameworks/Other (6):
 - Bootstrap
 - JQuery
 - Document Object Model (DOM)
+Words To Describe Skills:
+Expert
+Proficient
+Novice
