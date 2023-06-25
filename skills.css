@@ -53,7 +53,7 @@
     margin-right: 33%;
 }
 
-/* Bars for Skills */
+/* Proficiency Bars for Languages */
 .skill-bar {
     position: relative;
     left: 15px;
@@ -62,7 +62,6 @@
     height: 17px;
     background-color: gray;
 }
-
 
 #python-skill-bar {
     width: 70%;
@@ -84,5 +83,29 @@
 
 #js-skill-bar {
     width: 80%;
+    bottom: 175px;
+}
+
+/* Proficiency Bars for Frameworks/Other */
+#github-skill-bar {
+    width: 85%;
+    bottom: 475px;
+}
+#git-skill-bar {
+    width: 75%;
+    bottom: 400px;
+}
+#oop-skill-bar {
+    width: 70%;
+    bottom: 325px;
+}
+
+#bootstrap-skill-bar {
+    width: 30%;
+    bottom: 250px;
+}
+
+#dom-skill-bar {
+    width: 35%;
     bottom: 175px;
 }
