@@ -43,24 +43,27 @@ p {
 }
 
 @keyframes home-animation {
-    from {
+    0% {
         opacity: 0%;
-    } to {
+    } 100% {
         opacity: 100%;
     }
 }
 
 h1.home {
+    opacity: 0%;
    font-size: 72px; 
-   animation-duration: 3s;
-   animation-name: home-animation;
+   animation: home-animation 1s forwards;
 }
 
 
 .cover-photo {
+    opacity: 0%;
     padding-left: 100px;
     height: 600px;
     width: auto;
+    /* name_of_animation | duration | fill-mode | delay */
+    animation: home-animation 1s forwards .5s;
 }
 
 h1, h2 {
