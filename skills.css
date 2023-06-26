@@ -1,10 +1,10 @@
-#axes {
+.axes {
     margin-top: 20px;
     margin-left: 5px;
     padding-left: 25px;
 }
 
-#language-pictures-column {
+.language-pictures-column {
     /* background-color: black; */
     width: 100px;
     height: 400px;
@@ -21,7 +21,7 @@
     right: 80px;
 }
 
-#y-axis {
+.y-axis {
     background-color: lightgray;
     width: 15px;
     height: 500px;
@@ -30,13 +30,14 @@
     padding-left: 15px;
 }
 
-#x-axis {
+.x-axis-languages, .x-axis-frameworks {
     background-color: lightgray;
     width: 100%;
     height: 15px;
     border-radius: 0 10px 10px 0;
 }
-#x-axis-labels {
+
+.x-axis-labels {
     /* background-color: aqua; */
     font-size: 23px;
     height: 10px;
@@ -67,13 +68,40 @@
     width: 70%;
     bottom: 475px;
 }
+
+@keyframes python-animation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
 #cpp-skill-bar {
     width: 45%;
     bottom: 400px;
 }
+
+@keyframes cpp-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 45%;
+    }
+}
+
 #rust-skill-bar {
     width: 35%;
     bottom: 325px;
+}
+
+@keyframes rust-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 35%;
+    }
 }
 
 #html-skill-bar {
@@ -81,9 +109,25 @@
     bottom: 250px;
 }
 
+@keyframes html-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 60%;
+    }
+}
+
 #js-skill-bar {
     width: 80%;
     bottom: 175px;
+}
+
+@keyframes js-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 80%;
+    }
 }
 
 /* Proficiency Bars for Frameworks/Other */
@@ -91,13 +135,39 @@
     width: 85%;
     bottom: 475px;
 }
+
+@keyframes github-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 85%;
+    }
+}
+
 #git-skill-bar {
     width: 75%;
     bottom: 400px;
 }
+
+@keyframes git-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 75%;
+    }
+}
+
 #oop-skill-bar {
     width: 70%;
     bottom: 325px;
+}
+
+@keyframes oop-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 70%;
+    }
 }
 
 #bootstrap-skill-bar {
@@ -105,7 +175,62 @@
     bottom: 250px;
 }
 
+@keyframes bootstrap-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 30%;
+    }
+}
+
 #dom-skill-bar {
     width: 35%;
     bottom: 175px;
+}
+
+@keyframes dom-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 35%;
+    }
+}
+
+/* To add delays, add number after second number in animation property */
+@media (prefers-reduced-motion: no-preference) {
+    .python-animation {
+        animation: python-animation 1s 1;
+    }
+    .cpp-animation {
+        animation: cpp-animation 1s 1;
+    }
+    .rust-animation {
+        animation: rust-animation 1s 1;
+    }
+    .html-animation {
+        animation: html-animation 1s 1;
+    }
+    .js-animation {
+        animation: js-animation 1s 1;
+    }
+
+    .github-animation {
+        animation: github-animation 1s 1;
+    }
+
+    .git-animation {
+        animation: git-animation 1s 1;
+    }
+
+    .oop-animation {
+        animation: oop-animation 1s 1;
+    }
+
+    .bootstrap-animation {
+        animation: bootstrap-animation 1s 1;
+    }
+
+    .dom-animation {
+        animation: dom-animation 1s 1;
+    }
 }
