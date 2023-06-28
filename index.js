@@ -1,3 +1,5 @@
+
+
 const langauges_skills_btn = document.getElementById("languages-btn");
 const frameworks_skills_btn = document.getElementById("frameworks-btn");
 const languages_div = document.getElementById("skills-in-languages");
@@ -59,3 +61,5 @@ frameworks_skills_btn.addEventListener('click', showFrameworksDiv);
 
 languages_observer.observe(document.querySelector(".x-axis-languages"));
 frameworks_observer.observe(document.querySelector(".x-axis-frameworks"));
+
+

@@ -213,13 +213,16 @@
             <div class="row">
                 <h1 class="contact-header">Thank you for visiting! Let's chat!</h1>
             </div>
-            <div class="row">
+            <div class="row contact-me-row">
                 <div class="col-lg-6">
-                    <h3><label for="emailInput" class="form-label">Email address:</label></h3>
-                    <input type="email" class="form-control" placeholder="name@example.com">
-
-                    <h3><label for="textareaInput" id="comments-area" class="form-label">Write Away!</label></h3>
-                    <textarea class="form-control" rows="5" placeholder="Questions? Comments? Concerns?"></textarea>
+                    <h3><label for="emailInput" class="email-form-label">Email address:</label></h3>
+                    <input type="email" class="form-control" placeholder="name@example.com" id="user-email">
+                    
+                    <h3><label for="textareaInput" class="comments-form-label">Write Away!</label></h3>
+                    <textarea class="form-control" rows="5" placeholder="Questions? Comments? Concerns?" id="comments-area"></textarea>
+                    <br>
+                    <button type="button" class="btn btn-light" id="submit-button">Submit</button>
+                    <div id="submission-message">Thank you for submitting!</div>
                 </div>
                 <div class="col-lg-6 contact-info">
                     <h3>You can contact me at:</h3>
@@ -233,7 +236,7 @@
                         <li>Bootstrap</li>
                         <li>Document Object Model (DOM)</li>
                     </ul>
-                    <a href="https://docs.google.com/document/d/1QccD-QtopnuSShMNlUV7joSSHz1U6WgbwAS_eqQvGGQ/edit?usp=sharing" target="_blank"><h3>Link To Resumé:</h3></a> 
+                    <a href="https://docs.google.com/document/d/1QccD-QtopnuSShMNlUV7joSSHz1U6WgbwAS_eqQvGGQ/edit?usp=sharing" target="_blank"><h3>Link To Resumé</h3></a> 
 
                 </div>
             </div>
@@ -266,8 +269,53 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
     <script src="index.js"></script>
+    <script type="module">
+        const submit_message = document.getElementById("submission-message");
+
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+        apiKey: "AIzaSyCJLGCBOxWr1mvSx7Yj0q9JaGIF2uo4iTc",
+        authDomain: "personal-website-f95b4.firebaseapp.com",
+        projectId: "personal-website-f95b4",
+        storageBucket: "personal-website-f95b4.appspot.com",
+        messagingSenderId: "561358323235",
+        appId: "1:561358323235:web:cc67418bbc480b6476bb96"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        import {getDatabase, set, get, update, remove, ref, child} from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+        const db = getDatabase();
+
+        var email_field = document.getElementById("user-email");
+        var comments_field = document.getElementById("comments-area");
+
+        const submit_button = document.querySelector("#submit-button");
+        function InsertData() {
+            set(ref(db, "Emails/" + email_field.value.replace('.', '_')), {
+                email: email_field.value,
+                whatTheySaid: comments_field.value
+            })
+            .then(()=>{
+                submit_message.style.display = 'block';
+                email_field.value = "";
+                comments_field.value = "";
+
+            })
+            .catch((error) => {
+                alert(error)
+            });
+
+        }
+        submit_button.addEventListener('click', InsertData);
+    </script>
+
 </body>
 
 </html>
