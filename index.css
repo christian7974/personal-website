@@ -52,16 +52,16 @@ p {
 
 h1.home {
     opacity: 0%;
-   font-size: 72px; 
-   animation: fade-in 1s forwards;
+    font-size: 72px; 
+    animation: fade-in 1s forwards;
 }
-
 
 .cover-photo {
     opacity: 0%;
-    padding-left: 100px;
+    margin-left: 150px;
     height: 600px;
     width: auto;
+    border-radius: 50px 50px 50px 50px;
     /* name_of_animation | duration | fill-mode | delay */
     animation: fade-in 1s forwards .5s;
 }
@@ -173,8 +173,6 @@ h1.about-me-header {
         transform: rotate(360deg);
     }
 }
-
-
 
 #vinyl-image {
     margin-top: 25px;

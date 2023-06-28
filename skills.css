@@ -65,7 +65,7 @@
 }
 
 #python-skill-bar {
-    width: 70%;
+    width: 0%;
     bottom: 475px;
 }
 
@@ -79,7 +79,7 @@
 }
 
 #cpp-skill-bar {
-    width: 45%;
+    width: 0%;
     bottom: 400px;
 }
 
@@ -92,7 +92,7 @@
 }
 
 #rust-skill-bar {
-    width: 35%;
+    width: 0%;
     bottom: 325px;
 }
 
@@ -105,7 +105,7 @@
 }
 
 #html-skill-bar {
-    width: 60%;
+    width: 0%;
     bottom: 250px;
 }
 
@@ -118,7 +118,7 @@
 }
 
 #js-skill-bar {
-    width: 80%;
+    width: 0%;
     bottom: 175px;
 }
 
@@ -132,7 +132,7 @@
 
 /* Proficiency Bars for Frameworks/Other */
 #github-skill-bar {
-    width: 85%;
+    width: 0%;
     bottom: 475px;
 }
 
@@ -145,7 +145,7 @@
 }
 
 #git-skill-bar {
-    width: 75%;
+    width: 0%;
     bottom: 400px;
 }
 
@@ -158,7 +158,7 @@
 }
 
 #oop-skill-bar {
-    width: 70%;
+    width: 0%;
     bottom: 325px;
 }
 
@@ -171,7 +171,7 @@
 }
 
 #bootstrap-skill-bar {
-    width: 30%;
+    width: 0%;
     bottom: 250px;
 }
 
@@ -184,7 +184,7 @@
 }
 
 #dom-skill-bar {
-    width: 35%;
+    width: 0%;
     bottom: 175px;
 }
 
@@ -199,38 +199,38 @@
 /* To add delays, add number after second number in animation property */
 @media (prefers-reduced-motion: no-preference) {
     .python-animation {
-        animation: python-animation 1s 1;
+        animation: python-animation 1s 1 forwards;
     }
     .cpp-animation {
-        animation: cpp-animation 1s 1;
+        animation: cpp-animation 1s 1 forwards;
     }
     .rust-animation {
-        animation: rust-animation 1s 1;
+        animation: rust-animation 1s 1 forwards;
     }
     .html-animation {
-        animation: html-animation 1s 1;
+        animation: html-animation 1s 1 forwards;
     }
     .js-animation {
-        animation: js-animation 1s 1;
+        animation: js-animation 1s 1 forwards;
     }
 
     .github-animation {
-        animation: github-animation 1s 1;
+        animation: github-animation 1s 1 forwards;
     }
 
     .git-animation {
-        animation: git-animation 1s 1;
+        animation: git-animation 1s 1 forwards;
     }
 
     .oop-animation {
-        animation: oop-animation 1s 1;
+        animation: oop-animation 1s 1 forwards;
     }
 
     .bootstrap-animation {
-        animation: bootstrap-animation 1s 1;
+        animation: bootstrap-animation 1s 1 forwards;
     }
 
     .dom-animation {
-        animation: dom-animation 1s 1;
+        animation: dom-animation 1s 1 forwards;
     }
 }
