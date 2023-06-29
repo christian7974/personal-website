@@ -11,6 +11,7 @@ I wanted to make this website after taking a Udemy Course about web development.
 ## Things I Would Do Differently
 
 One thing that I would do differently would be to plan out what I would do in what order. I had the vision for my website (as seen in the prototypes folder), however I did not have the process planned out how I liked (I should have decided what sections I wanted to do first, what part of my website took priority, etc). While I am proud with how the website came out, planning out the steps would have allowed me to work on one section at a time rather than jump around.
+I also want to come up with a way where when someone would enter their email and comment under the Contact Me section and I would receive an email that had their email as well as what they had to say. I had to settle with using a database to do this, however this seems like an overkill. It also means that I have to check periodically to make sure I did not miss someone saying anything.
 
 
 ## Tools Used
