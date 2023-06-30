@@ -30,7 +30,7 @@
 
     <section id="portfolio" class="light-colored-section">
         <div class="container-fluid">
-            <h1 class="light-colored-section">Portfolio</h1>
+            <h1 class="portfolio-header">Portfolio</h1>
 
             <div id="projectCarousel" class="carousel slide" data-bs-theme="dark">
                 <div class="carousel-indicators">
@@ -83,7 +83,7 @@
 
             <h1 class="skills-header">Skills</h1>
 
-            <div class="row">
+            <div class="row" id="skills-button">
                 <div class="btn-group" role="group" aria-label="Basic example" id="languages-frameworks-btn-group">
                     <button type="button" class="btn btn-light" id="languages-btn">Langauges</button>
                     <button type="button" class="btn btn-light" id="frameworks-btn">Frameworks/Other</button>
@@ -145,6 +145,23 @@
                             <div id="expert-label">Expert</div>
                         </div>
                     </div>
+                </div>
+                <div id="simple-skills">
+                    <h4>Proficient In:</h4>
+                    <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>Git/Github</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                    <h4>Familiar With</h4>
+                    <ul>
+                        <li>Rust</li>
+                        <li>Javascript</li>
+                        <li>OOP</li>
+                        <li>Java</li>
+                        <li>C</li>
+                    </ul>
                 </div>
                 
             </div>
@@ -212,7 +229,7 @@
                 <h1 class="contact-header">Thank you for visiting! Let's chat!</h1>
             </div>
             <div class="row contact-me-row">
-                <div class="col-lg-6">
+                <div class="col-lg-6" id="form-column">
                     <h3><label for="emailInput" class="email-form-label">Email address:</label></h3>
                     <input type="email" class="form-control" placeholder="name@example.com" id="user-email">
                     
