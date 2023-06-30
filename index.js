@@ -61,5 +61,22 @@ frameworks_skills_btn.addEventListener('click', showFrameworksDiv);
 
 languages_observer.observe(document.querySelector(".x-axis-languages"));
 frameworks_observer.observe(document.querySelector(".x-axis-frameworks"));
-
+const screenWidth = document.documentElement.scrollWidth;
+window.addEventListener("resize", () => {
+    
+    if (screenWidth < 900) {
+        console.log("hre");
+        const book_currently_reading = document.getElementById("book-currently-reading");
+        const simpler_book = document.getElementById("simple-book");
+        book_currently_reading.style.display = 'none';
+        simpler_book.style.display = 'block';
+    }
+});
+if (screenWidth < 900) {
+    console.log("hre");
+    const book_currently_reading = document.getElementById("book-currently-reading");
+    const simpler_book = document.getElementById("simple-book");
+    book_currently_reading.style.display = 'none';
+    simpler_book.style.display = 'block';
+}
 

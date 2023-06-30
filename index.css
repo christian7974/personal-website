@@ -10,7 +10,7 @@
 }
 
 p {
-    font-size: 20px;
+    font-size: 1vw;
     margin: 5px 0;
 }
 
@@ -66,16 +66,6 @@ h1.home {
     border-radius: 50px 50px 50px 50px;
     /* name_of_animation | duration | fill-mode | delay */
     animation: fade-in 1s forwards .5s;
-}
-
-@media screen and (max-width: 900px) {
-    h1.home {
-        font-size: 32px;
-        text-align: center;
-    }
-    .cover-photo {
-        margin-top: 70px;
-    }
 }
 
 #projectCarousel {
@@ -173,6 +163,15 @@ h1.skills-header {
     animation: rotation 3s infinite linear;
 }
 
+#simple-book {
+    display: none;
+    height: auto;
+}
+
+#ah-book {
+    width: 25%;
+    height: auto;
+}
 @keyframes rotation {
     from {
         transform: rotate(0deg);
@@ -230,5 +229,44 @@ h1.skills-header {
 
 li {
     font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    h1.home {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .cover-photo {
+        margin-top: 70px;
+    }
+
+    h1.about-me-header {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    #vinyl-image {
+        width: 25%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #about-me {
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-fluid {
+        height: 100vh;
+    }
+
+    #about-me {
+        height: 150vh;
+    }
 }
 
