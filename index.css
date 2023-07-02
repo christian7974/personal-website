@@ -119,6 +119,10 @@ h1.skills-header {
    margin: 0 auto 10px auto;
 }
 
+#about-me-content {
+    opacity: 0;
+}
+
 #book-reading {
     margin-top: 25px;
     height: 200px;
@@ -237,6 +241,12 @@ li {
 
 #simple-portfolio {
     display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .fade-in {
+        animation: fade-in 1.5s .5s forwards;
+    }
 }
 
 /* @media used to adjust the size of elements if website is viewed on phone */
