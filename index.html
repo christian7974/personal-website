@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    
+
     <section id="title" class="dark-colored-section">
         <div class="container-fluid">
             <div class="row">
@@ -32,47 +32,32 @@
     <section id="portfolio" class="light-colored-section">
         <div class="container-fluid">
             <h1 class="portfolio-header">Portfolio</h1>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
 
-            <div id="projectCarousel" class="carousel slide" data-bs-theme="dark">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <a href="https://github.com/christian7974/arith" target="_blank"><img src="assets/rum_repo_screenshot.png" style="width:100%;height:400px"></a>
+                    <div class="caption">Implemented a lightweight version of JPEG using the Discrete Cosine Transformation
+                        Formula.</div>
+                </div>
 
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <a href="https://github.com/christian7974/Convex-Hull" target="_blank"><img src="assets/convex_hull_example.jpg" style="width:100%;height:400px"></a>
+                    <div class="caption">Implemented the Graham Scan algorithm to find the Convex Hull of a set of points
+                        in C++.</div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <!--ADD PICTURE FOR THIS PROJECT HERE-->
-                        <a href="https://github.com/christian7974/arith" target="_blank"><img
-                                src="assets/rum_repo_screenshot.png" class="d-block w-100 h-75" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Lossy Image Compression in Rust</h5>
-                            <p>Implemented a lightweight version of JPEG using the Discrete Cosine Transformation
-                                Formula.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://github.com/christian7974/Convex-Hull" target="_blank"><img
-                                src="assets/convex_hull_example.jpg" class="d-block w-100 h-75" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Convex Hull</h5>
-                            <p>Implemented the Graham Scan algorithm to find the Convex Hull of a set of points in C++.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center" id="dots-row">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
             </div>
             <h2 class="portfolio-footer">Here are some projects that I have worked on. Click on one to be directed to
                 the
@@ -84,7 +69,8 @@
                 <a href="https://github.com/christian7974/arith">
                     <h5>Lossy Image Compression in Rust</h5>
                 </a>
-                <p>Implemented the Graham Scan algorithm to find the Convex Hull of a set of points in C++.</p>
+                <p>Implemented a lightweight version of JPEG using the Discrete Cosine Transformation
+                    Formula.</p>
                 <img src="assets/rum_repo_screenshot.png" class="d-block w-100 h-75" alt="...">
 
 
@@ -269,7 +255,7 @@
                 <div class="col-lg-6 contact-info">
                     <h3>You can also contact me at:</h3>
                     <a href="mailto:christian.tropeano1@gmail.com">
-                        <h4>christian.tropeano1@gmail.com</h4>
+                        <h3>christian.tropeano1@gmail.com</h3>
                     </a>
                     <br>
                     <h3>What I Used to Make Website:</h3>
