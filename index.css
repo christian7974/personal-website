@@ -5,7 +5,7 @@
 
 
 * {
-    font-family: 'open-sans';
+    font-family: 'open-sans', sans-serif;
     font-variation-settings: "wght" 300;
 }
 
@@ -13,6 +13,7 @@ p {
     font-size: 1vw;
     margin: 5px 0;
 }
+
 
 .dark-colored-section {
     background-color: #2c2a4a;
@@ -34,7 +35,6 @@ p {
     padding: 3% 15% 3% 15%;
     height: 100vh;
 }
-  
 
 .cover-photo, h1.home {
     margin-top: 100px;
