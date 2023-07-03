@@ -117,11 +117,12 @@ function showSlides(n) {
 
 $("#nav").hover(
     function(){
-        $(".nav-item").slideToggle();
+        $(".nav-item").slideToggle(300, "swing");
         $(".nav-item").css("display", "block");
     },
     function() {
-        $(".nav-item").slideToggle();
-    });
+        $(".nav-item").slideToggle(300, "swing");
+    }
+);
 
 

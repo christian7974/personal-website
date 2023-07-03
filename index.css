@@ -16,14 +16,24 @@
 }
 
 #nav-content {
-    background-color: white;
+    background-color: #FAFAFF;
+    border-radius: 7px;
 }
 
 .nav-item {
-    font-size: 1vw;
+    font-size: 1.2vw;
     display: none;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    padding: 5px 5px 5px 0;
+    text-decoration: none;
+    color: #040406;
+    border-radius: inherit;
+    padding-left: 10px;
 }
+
+a:hover.nav-item {
+    background-color: lightgray;
+} 
 
 p {
     font-size: 1vw;
@@ -35,15 +45,15 @@ p {
     color: #FAFAFF;
 }
 
+.light-colored-section {
+    background-color: #e4d9ff;
+    color: #040406;
+}
+
 .light-colored-section h1 {
     font-size: 72px; 
     text-align: center;
     margin-bottom: 40px;
-}
-
-.light-colored-section {
-    background-color: #e4d9ff;
-    color: #040406;
 }
 
 .container-fluid {
@@ -128,6 +138,13 @@ h1.home {
     text-align: center;
 }
 
+.caption a {
+    text-decoration: none;
+}
+
+#dots-row {
+    margin-top: 20px;
+}
 
 .dot {
     cursor: pointer;
