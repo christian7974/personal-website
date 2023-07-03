@@ -17,8 +17,12 @@
 
 #nav-content {
     background-color: white;
+}
+
+.nav-item {
+    font-size: 1vw;
     display: none;
-    list-style-type: none;
+    margin-bottom: 10px;
 }
 
 p {

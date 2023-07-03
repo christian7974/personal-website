@@ -91,43 +91,37 @@ showSlides(slideIndex);
 
 // Next/previous controls
 var plusSlides = function(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
 var currentSlide = function(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
+    }
+    for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
 }
 
-$("#nav").hover(function(){
-    $("#nav").animate({
-        width: '175px',
-        height: '250px'
-    });
-    $("#nav-content").delay(500).css('display', 'block');
-    }, 
+$("#nav").hover(
     function(){
-        $("#nav").animate( {
-            width: '50px',
-            height: '50px'
-        });
-        $("#nav-content").css('display', 'none');
-  });
+        $(".nav-item").slideToggle();
+        $(".nav-item").css("display", "block");
+    },
+    function() {
+        $(".nav-item").slideToggle();
+    });
 
 
