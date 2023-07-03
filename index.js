@@ -115,4 +115,19 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+$("#nav").hover(function(){
+    $("#nav").animate({
+        width: '175px',
+        height: '250px'
+    });
+    $("#nav-content").delay(500).css('display', 'block');
+    }, 
+    function(){
+        $("#nav").animate( {
+            width: '50px',
+            height: '50px'
+        });
+        $("#nav-content").css('display', 'none');
+  });
+
 
