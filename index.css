@@ -339,7 +339,7 @@ li {
 }
 
 /* @media used to adjust the size of elements if website is viewed on phone */
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
 
     #nav {
         display: none;
