@@ -328,6 +328,10 @@ li {
     display: none;
 }
 
+#email {
+    font-size: 3vh;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .fade-in {
         animation: fade-in 1.5s .5s forwards;
@@ -335,7 +339,7 @@ li {
 }
 
 /* @media used to adjust the size of elements if website is viewed on phone */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1025px) {
 
     #nav {
         display: none;
@@ -362,7 +366,7 @@ li {
     }
 
     p {
-        font-size: 3vw;
+        font-size: 1.75vh;
     }
 
     #vinyl-image {
@@ -416,7 +420,9 @@ li {
     }
 
     #simple-portfolio img {
-        margin-bottom: 25%;
+        margin-bottom: 10%;
+        height: 20vh;
+        width: 70vw;
     }
 
     h5 {
@@ -425,5 +431,9 @@ li {
 
     h3 {
         font-size: 2.5vh;
+    }
+
+    #email {
+        font-size: 2vw;
     }
 }

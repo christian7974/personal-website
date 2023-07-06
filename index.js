@@ -5,7 +5,7 @@ const frameworksSkillsBtn = document.getElementById("frameworks-btn");
 const languagesDiv = document.getElementById("skills-in-languages");
 const frameworksDiv = document.getElementById("skills-in-frameworks");
 const screenWidth = document.documentElement.scrollWidth;
-
+const maxScreenSize = 1025;
 const languagesObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         const pythonSkillBar = entry.target.querySelector("#python-skill-bar");
@@ -77,11 +77,11 @@ var insertSimpleBook = function() {
     simplerBook.style.display = 'block';
 }
 window.addEventListener("resize", () => {  
-    if (screenWidth < 900) {
+    if (screenWidth < maxScreenSize) {
         insertSimpleBook();
     }
 });
-if (screenWidth < 900) {
+if (screenWidth < maxScreenSize) {
     insertSimpleBook();
 }
 
