@@ -257,6 +257,13 @@ h1.skills-header {
     height: auto;
 }
 
+#spotify-album-widget {
+    margin-top: 30px;
+    border-radius: 12px;
+    width: 100%;
+    height: 350px;
+}
+
 #ah-book {
     width: 25%;
     height: auto;
@@ -435,5 +442,9 @@ li {
 
     #email {
         font-size: 2vw;
+    }
+
+    #spotify-album-widget {
+        height: 50%;
     }
 }
