@@ -270,7 +270,7 @@
                         id="comments-area"></textarea>
                     <br>
                     <button type="button" class="btn btn-light" id="submit-button">Submit</button>
-                    <div id="submission-message">Thank you for submitting!</div>
+                    <div id="submission-message"></div>
                 </div>
                 <div class="col-lg-6 contact-info">
                     <h3>You can also contact me at:</h3>
@@ -350,12 +350,17 @@
 
         const submit_button = document.querySelector("#submit-button");
         function InsertData() {
-            set(ref(db, "Emails/" + email_field.value.replace('.', '_')), {
+            email_field.classList.remove("invalid-email");
+            // Regular expression for a valid Email address
+            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; 
+            if (email_field.value.match(validRegex)) {
+                set(ref(db, "Emails/" + email_field.value.replace('.', '_')), {
                 email: email_field.value,
                 whatTheySaid: comments_field.value
-            })
+                })
                 .then(() => {
                     submit_message.style.display = 'block';
+                    submit_message.textContent = "Thanks for submitting!";
                     email_field.value = "";
                     comments_field.value = "";
 
@@ -363,6 +368,13 @@
                 .catch((error) => {
                     alert(error)
                 });
+            } else {
+                email_field.classList.add("invalid-email");
+                submit_message.style.display = 'block';
+                submit_message.textContent = "Please enter a valid email.";
+                return false;
+            }
+            
 
         }
         submit_button.addEventListener('click', InsertData);

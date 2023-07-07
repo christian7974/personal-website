@@ -314,6 +314,11 @@ h1.skills-header {
     padding-left: 200px;
 }
 
+.invalid-email {
+    border-color: red;
+    border-width: 3px;
+}
+
 #submission-message {
     font-size: 20px;
     color: #e4d9ff;
