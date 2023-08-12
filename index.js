@@ -63,6 +63,7 @@ function showFrameworksDiv() {
     languagesDiv.style.display = 'none';
     frameworksDiv.style.display = 'block';
 }
+
 languagesSkillsBtn.addEventListener('click', showLanguagesDiv);
 frameworksSkillsBtn.addEventListener('click', showFrameworksDiv);
 

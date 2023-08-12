@@ -390,7 +390,7 @@ li {
     #about-me {
         align-items: center;
         text-align: center;
-        height: 150vh;
+        height: 175vh;
     }
     
     .col-lg-6#form-column {
@@ -446,7 +446,7 @@ li {
     }
 
     #email {
-        font-size: 2vw;
+        font-size: 4.5vw;
     }
 
     #spotify-album-widget {
