@@ -30,7 +30,11 @@
     padding-left: 15px;
 }
 
-.x-axis-languages, .x-axis-frameworks {
+.taller-axis {
+    height: 590px;
+}
+
+.x-axis-languages, .x-axis-frameworks, .x-axis-other-skills {
     background-color: lightgray;
     width: 100%;
     height: 15px;
@@ -66,7 +70,7 @@
 
 #python-skill-bar {
     width: 0%;
-    bottom: 475px;
+    bottom: 560px;
 }
 
 @keyframes python-animation {
@@ -80,7 +84,7 @@
 
 #cpp-skill-bar {
     width: 0%;
-    bottom: 400px;
+    bottom: 485px;
 }
 
 @keyframes cpp-animation {
@@ -93,7 +97,7 @@
 
 #rust-skill-bar {
     width: 0%;
-    bottom: 325px;
+    bottom: 410px;
 }
 
 @keyframes rust-animation {
@@ -106,7 +110,7 @@
 
 #html-skill-bar {
     width: 0%;
-    bottom: 250px;
+    bottom: 335px;
 }
 
 @keyframes html-animation {
@@ -119,7 +123,7 @@
 
 #js-skill-bar {
     width: 0%;
-    bottom: 175px;
+    bottom: 260px;
 }
 
 @keyframes js-animation {
@@ -130,7 +134,72 @@
     }
 }
 
+#nosql-skill-bar {
+    width: 0%;
+    bottom: 195px;
+}
+
+@keyframes nosql-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 20%;
+    }
+}
+
 /* Proficiency Bars for Frameworks/Other */
+#express-skill-bar {
+    width: 10%;
+    bottom: 470px;
+}
+
+@keyframes express-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 20%;
+    }
+}
+
+#bootstrap-skill-bar {
+    width: 0%;
+    bottom: 400px;
+}
+
+@keyframes bootstrap-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 30%;
+    }
+}
+
+#node-skill-bar {
+    width: 10%;
+    bottom: 330px;
+}
+
+@keyframes node-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 40%;
+    }
+}
+
+#jquery-skill-bar {
+    width: 10%;
+    bottom: 260px;
+}
+
+@keyframes jquery-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 20%;
+    }
+}
+/* Proficiency Bars for Other Skills */
 #github-skill-bar {
     width: 0%;
     bottom: 475px;
@@ -170,22 +239,9 @@
     }
 }
 
-#bootstrap-skill-bar {
-    width: 0%;
-    bottom: 250px;
-}
-
-@keyframes bootstrap-animation {
-    from {
-        width: 0%;
-    } to {
-        width: 30%;
-    }
-}
-
 #dom-skill-bar {
     width: 0%;
-    bottom: 175px;
+    bottom: 250px;
 }
 
 @keyframes dom-animation {
@@ -196,8 +252,22 @@
     }
 }
 
+#mongo-skill-bar {
+    width: 0%;
+    bottom: 175px;
+}
+
+@keyframes mongo-animation {
+    from {
+        width: 0%;
+    } to {
+        width: 20%;
+    }
+}
+
 /* To add delays, add number after second number in animation property */
 @media (prefers-reduced-motion: no-preference) {
+    /* Languages */
     .python-animation {
         animation: python-animation 1s 1 forwards;
     }
@@ -214,6 +284,29 @@
         animation: js-animation 1s 1 forwards;
     }
 
+    .nosql-animation {
+        animation: nosql-animation 1s 1 forwards;
+    }
+
+    /* Frameworks */
+
+    .express-animation {
+        animation: express-animation 1s 1 forwards;
+    }
+
+    .bootstrap-animation {
+        animation: bootstrap-animation 1s 1 forwards;
+    }
+
+    .node-animation {
+        animation: node-animation 1s 1 forwards;
+    }
+
+    .jquery-animation {
+        animation: jquery-animation 1s 1 forwards;
+    }
+
+    /* Other Skills */
     .github-animation {
         animation: github-animation 1s 1 forwards;
     }
@@ -226,11 +319,11 @@
         animation: oop-animation 1s 1 forwards;
     }
 
-    .bootstrap-animation {
-        animation: bootstrap-animation 1s 1 forwards;
-    }
-
     .dom-animation {
         animation: dom-animation 1s 1 forwards;
+    }
+
+    .mongo-animation {
+        animation: mongo-animation 1s 1 forwards;
     }
 }

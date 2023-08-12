@@ -111,24 +111,26 @@
             <div class="row" id="skills-button">
                 <div class="btn-group" role="group" aria-label="Basic example" id="languages-frameworks-btn-group">
                     <button type="button" class="btn btn-light" id="languages-btn">Langauges</button>
-                    <button type="button" class="btn btn-light" id="frameworks-btn">Frameworks/Other</button>
+                    <button type="button" class="btn btn-light" id="frameworks-btn">Frameworks</button>
+                    <button type="button" class="btn btn-light" id="other-skills-btn">Other Technologies</button>
                 </div>
             </div>
             <div class="row">
                 <div id="skills-in-languages">
                     <div class="language-pictures-column">
-                        <img src="assets/skills/python_logo.png" class="skills-picture" alt="Image of the Python Logo">
-                        <img src="assets/skills/c++_logo.png" class="skills-picture"
+                        <img src="assets/skills/languages/python_logo.png" class="skills-picture" alt="Image of the Python Logo">
+                        <img src="assets/skills/languages/c++_logo.png" class="skills-picture"
                             alt="Icon of the logo for C Plus Plus">
-                        <img src="assets/skills/ferris_rust.png" class="skills-picture"
+                        <img src="assets/skills/languages/ferris_rust.png" class="skills-picture"
                             alt="An image of the Programming Langauge Rust's mascot, Ferris">
-                        <img src="assets/skills/html_css_logo.jpg" class="skills-picture"
+                        <img src="assets/skills/languages/html_css_logo.jpg" class="skills-picture"
                             alt="An image consisting of the logos for HTML and CSS">
-                        <img src="assets/skills/js_logo.png" class="skills-picture" alt="The logo for Javascript">
+                        <img src="assets/skills/languages/js_logo.png" class="skills-picture" alt="The logo for Javascript">
+                        <img src="assets/skills/languages/nosql_logo.webp" class="skills-picture" alt="The logo for Javascript">
 
                     </div>
                     <div class="axes">
-                        <div class="y-axis">
+                        <div class="y-axis taller-axis">
 
                         </div>
                         <!-- Proficiency Bars -->
@@ -138,6 +140,7 @@
                             <div id="rust-skill-bar" class="skill-bar"></div>
                             <div id="html-skill-bar" class="skill-bar"></div>
                             <div id="js-skill-bar" class="skill-bar"></div>
+                            <div id="nosql-skill-bar" class="skill-bar"></div>
                         </div>
                         <div class="x-axis-labels">
                             <div id="novice-label">Novice</div>
@@ -149,26 +152,24 @@
 
                 <div id="skills-in-frameworks">
                     <div class="language-pictures-column"> <!-- Put pictures, names of languages here -->
-                        <img src="assets/skills/github_logo.png" class="skills-picture"
-                            alt="Silhouette of the logo for Github">
-                        <img src="assets/skills/git_logo.png" class="skills-picture" alt="The logo for Git">
-                        <img src="assets/skills/oop.png" class="skills-picture"
-                            alt="An image of a blue square that says 'Object Oriented Programming' ">
-                        <img src="assets/skills/bootstrap_logo.png" class="skills-picture"
+                        <img src="assets/skills/frameworks/express_logo.webp" class="skills-picture"
+                            alt="Image of the logo for Express JS.">
+                        <img src="assets/skills/frameworks/bootstrap_logo.png" class="skills-picture"
                             alt="The logo for the CSS Framework Bootstrap">
-                        <img src="assets/skills/dom_logo.png" class="skills-picture"
-                            alt="An image of an orange square that says Document Object Model">
+                        <img src="assets/skills/frameworks/nodejs_logo.png" class="skills-picture"
+                            alt="The logo for Node.js">
+                        <img src="assets/skills/frameworks/jquery_logo.svg" class="skills-picture"
+                            alt="The logo for the JS framework JQuery">
                     </div>
                     <div class="axes">
                         <div class="y-axis">
 
                         </div>
                         <div class="x-axis-frameworks">
-                            <div id="github-skill-bar" class="skill-bar"></div>
-                            <div id="git-skill-bar" class="skill-bar"></div>
-                            <div id="oop-skill-bar" class="skill-bar"></div>
+                            <div id="express-skill-bar" class="skill-bar"></div>
                             <div id="bootstrap-skill-bar" class="skill-bar"></div>
-                            <div id="dom-skill-bar" class="skill-bar"></div>
+                            <div id="node-skill-bar" class="skill-bar"></div>
+                            <div id="jquery-skill-bar" class="skill-bar"></div>
                         </div>
                         <div class="x-axis-labels">
                             <div id="novice-label">Novice</div>
@@ -177,8 +178,40 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="other-skills">
+                    <div class="language-pictures-column"> <!-- Put pictures, names of languages here -->
+                        <img src="assets/skills/other/github_logo.png" class="skills-picture"
+                            alt="Silhouette of the logo for Github">
+                        <img src="assets/skills/other/git_logo.png" class="skills-picture" alt="The logo for Git">
+                        <img src="assets/skills/other/oop.png" class="skills-picture"
+                            alt="An image of a blue square that says 'Object Oriented Programming' ">
+                        <img src="assets/skills/other/dom_logo.png" class="skills-picture"
+                            alt="An image of an orange square that says Document Object Model">
+                        <img src="assets/skills/other/mongodb_logo.jpg" class="skills-picture" alt="Image of the MongoDB logo">
+                    </div>
+                    <div class="axes">
+                        <div class="y-axis">
+
+                        </div>
+                        <div class="x-axis-other-skills">
+                            <div id="github-skill-bar" class="skill-bar"></div>
+                            <div id="git-skill-bar" class="skill-bar"></div>
+                            <div id="oop-skill-bar" class="skill-bar"></div>
+                            <div id="dom-skill-bar" class="skill-bar"></div>
+                            <div id="mongo-skill-bar" class="skill-bar"></div>
+                        </div>
+                        <div class="x-axis-labels">
+                            <div id="novice-label">Novice</div>
+                            <div id="proficient-label">Proficient</div>
+                            <div id="expert-label">Expert</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills page that will appear if website viewed on phone/tablet -->
                 <div id="simple-skills">
-                    <h4>Proficient In:</h4>
+                    <!-- <h4>Proficient In:</h4>
                     <ul>
                         <li>C++</li>
                         <li>Python</li>
@@ -190,9 +223,37 @@
                         <li>Rust</li>
                         <li>Javascript</li>
                         <li>OOP</li>
-                        <li>Java</li>
                         <li>C</li>
+                        <li>NoSQL</li>
+                        <li>MongoDB</li>
+                        <li>Express</li>
+                        <li>Node.JS</li>
+                    </ul> -->
+                    <h4>Languages:</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Rust</li>
+                        <li>JS</li>
+                        <li>HTML/CSS</li>
+                        <li>NoSQL</li>
                     </ul>
+                    <h4>Frameworks:</h4>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>JQuery</li>
+                        <li>Express</li>
+                        <li>Node.js</li>
+                    </ul>
+                    <h4>Other Skills:</h4>
+                    <ul>
+                        <li>Github</li>
+                        <li>Git</li>
+                        <li>Document Object Model (DOM)</li>
+                        <li>OOP</li>
+                        <li>MongoDB</li>
+                    </ul>
+
                 </div>
 
             </div>

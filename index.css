@@ -188,7 +188,7 @@ h1.skills-header {
 
 #languages-frameworks-btn-group {
     margin: auto;
-    width: 25%;
+    width: 35%;
 }
 
 #skills-in-langauges {
@@ -196,6 +196,11 @@ h1.skills-header {
 }
 
 #skills-in-frameworks {
+    height: 100px;
+    display: none;
+}
+
+#other-skills {
     height: 100px;
     display: none;
 }
