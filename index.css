@@ -377,6 +377,10 @@ li {
         margin-bottom: 10px;
     }
 
+    #portfolio {
+        height: 140vh;
+    }
+
     p {
         font-size: 1.75vh;
     }
