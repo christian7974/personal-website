@@ -3,7 +3,6 @@
     src: url(assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
-
 * {
     font-family: 'open-sans', sans-serif;
     font-variation-settings: "wght" 300;
@@ -60,6 +59,10 @@ p {
 .container-fluid {
     padding: 3% 15% 3% 15%;
     height: 100vh;
+}
+
+#skills {
+    height: 110vh;
 }
 
 .cover-photo, h1.home {
