@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "nunito";
+    src: url(assets/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+/* Styling for the entire page */
+* {
+    font-family: "nunito", sans-serif;
+    font-size: 16px;
+    cursor: url(assets/cursor.png), auto;
+}
+
+.blue-colored-section, .pink-colored-section {
+    height: 100vh;
+    padding: 50px 11%;
+}
+
+.blue-colored-section {
+    background-color: #B1EDE8;
+}
+
+.pink-colored-section {
+    background-color: #FFA69E;
+}
+
+h1 {
+    font-size: calc(3rem + 1vw);
+}
+
+h2 {
+    font-size: calc(2.5rem + 1vw);
+}
+
+#menu {
+    display: none;
+    background-color: white;
+    padding: 10px;
+    top: 10px;
+    position: fixed;
+    z-index: 10;
+    margin-left: 20px;
+    vertical-align: auto;
+    border-radius: 10px;
+}
+
+#menu a {
+    display: block;
+}
+
+/* Styling the Index Div */
+
+#index-div h2 {
+    float: right;
+    margin-top: 150px;
+    text-align: right;
+    width: 100%;
+}
+
+#index-div img {
+    display: block;
+    width: 25%;
+    height: auto;
+    min-width: 150px;
+    border-radius: 10%;
+}
+
+/* Styling the Skills Div */
+
+#slider {
+    width: max-content;
+    margin: 0 auto 0 auto;
+}
+
+#lang-side, #framework-side {
+    border-radius: 10px;
+    background-color: blue;
+    display: inline;
+    color: white;
+    padding: 0 20px;
+    font-size: calc(.75rem + 1vw);;
+}
+
+#lang-side:hover, #framework-side:hover {
+    background-color: rgb(5, 5, 174);
+}
+
+/* Making sure everything is sized right*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768 px and up)*/
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/dekstops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #menu {
+        display: block;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+    
+} */
