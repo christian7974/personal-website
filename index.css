@@ -82,6 +82,7 @@ h2 {
 #slider {
     width: max-content;
     margin: 0 auto 0 auto;
+    clear: left;
 }
 
 #lang-side, #framework-side {
@@ -96,6 +97,63 @@ h2 {
 #lang-side:hover, #framework-side:hover {
     background-color: rgb(5, 5, 174);
     cursor: url(assets/cursor_click.png), auto;
+}
+
+#skills-container {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.skills-row {
+    display: flex;
+    margin: 50px 10px;
+}
+
+.individual-skill {
+    position: relative;
+    margin-right: 200px;
+}
+
+.individual-skill p {
+    display: none;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 5px;
+    right: 0;
+    /* visibility: hidden; */
+    font-size: calc(.25rem + 1vw);
+    height: max-content;
+    width: max-content;
+}
+
+.individual-skill img {
+    display: block;
+    width: 100%;
+}
+
+.novice-skill {
+    width: 10%;
+    max-width: 150px;
+}
+
+.individual-skill img:hover {
+    opacity: 40%;
+}
+
+.individual-skill img:hover + p {
+    /* visibility: visible; */
+    display: block;
+}
+
+.proficient-skill {
+    width: 15%;
+    max-width: 175px;
+}
+
+.expert-skill {
+    width: 25%;
+    max-width: 200px;
 }
 
 /* Styling Portfolio Div */
