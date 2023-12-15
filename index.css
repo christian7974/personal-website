@@ -37,6 +37,10 @@ h2 {
     font-size: calc(2.5rem + 1vw);
 }
 
+h3 {
+    font-size: calc(1.5rem + 1vw);
+}
+
 #menu {
     display: none;
     background-color: white;
@@ -62,9 +66,10 @@ h2 {
 
 /* Styling the Index Div */
 
+
 #index-div h2 {
     float: right;
-    margin-top: 125px;
+    margin-top: 100px;
     text-align: right;
     width: 100%;
 }
@@ -79,19 +84,39 @@ h2 {
 
 /* Styling the Skills Div */
 
-#slider {
-    width: max-content;
-    margin: 0 auto 20px auto;
-    clear: left;
+#proficiency-scale {
+    width: fit-content;
+    margin: 0 auto 30px auto;
 }
 
+#proficiency-scale h3 {
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+
+#proficiency-scale h3:nth-child(1) {
+    text-shadow: 3px 3px 3px red;
+}
+
+#proficiency-scale h3:nth-child(2) {
+    text-shadow: 3px 3px 3px yellow;
+}
+
+#proficiency-scale h3:nth-child(3) {
+    text-shadow: 3px 3px 3px green;
+}
+
+#skills-container-wrapper {
+    overflow-x: auto;
+}
 
 #skills-container {
     margin: 25px auto 0 auto;
     display: table;
     width: 100%;
     border-collapse: separate;
-    border-spacing: 50px;
+    border-spacing: 30px 40px;
+    overflow-x: auto;
 }
 
 .skills-row {
@@ -104,12 +129,8 @@ h2 {
 }
 
 .individual-skill img {
-    height: 100px;
+    height: 95px;
     transition: transform .3s;
-}
-
-.individual-skill img:hover {
-    transform: scale(1.2);
 }
 
 /* "Weakest" skill */
@@ -131,10 +152,6 @@ h2 {
     margin-top: 15px;
     visibility: hidden;
     font-size: calc(.2rem + 1vw);;
-}
-
-.individual-skill img:hover ~ p {
-    visibility: visible;
 }
 
 
@@ -172,6 +189,21 @@ h2 {
     #index-div img {
         display: block;
         margin: 0 auto 0 auto;
+        width: 15%;
+    }
+
+    #proficiency-scale h3 {
+        display: block;
+    }
+
+    #skills-container {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 20px;
+    }
+
+    .individual-skill img {
+        height: 75px;
     }
 }
 
@@ -189,6 +221,15 @@ h2 {
 @media only screen and (min-width: 1024px) {
     #menu {
         display: block;
+    }
+
+    .individual-skill img:hover {
+        transform: scale(1.2);
+    }
+
+
+    .individual-skill img:hover ~ p {
+        visibility: visible;
     }
 }
 
