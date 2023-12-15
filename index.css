@@ -8,10 +8,16 @@
     font-family: "nunito", sans-serif;
     font-size: 16px;
     cursor: url(assets/cursor.png), auto;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    cursor: url(assets/cursor_click.png), auto;
 }
 
 .blue-colored-section, .pink-colored-section {
-    height: 100vh;
+    height: 99vh;
     padding: 50px 11%;
 }
 
@@ -45,22 +51,29 @@ h2 {
 
 #menu a {
     display: block;
+    padding-bottom: 10px;
+}
+
+#menu a:hover {
+    display: block;
+    padding-bottom: 10px;
+    background-color: red;
 }
 
 /* Styling the Index Div */
 
 #index-div h2 {
     float: right;
-    margin-top: 150px;
+    margin-top: 125px;
     text-align: right;
     width: 100%;
 }
 
 #index-div img {
-    display: block;
+    margin-top: 3%;
     width: 25%;
+    min-width: 250px;
     height: auto;
-    min-width: 150px;
     border-radius: 10%;
 }
 
@@ -82,16 +95,49 @@ h2 {
 
 #lang-side:hover, #framework-side:hover {
     background-color: rgb(5, 5, 174);
+    cursor: url(assets/cursor_click.png), auto;
 }
+
+/* Styling Portfolio Div */
+.project {
+    width: max-content;
+    text-align: center;
+    max-width: 750px;
+    display: inline-block;
+}
+
+.project:nth-child(3) {
+    float: right;
+}
+
 
 /* Making sure everything is sized right*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .blue-colored-section, .pink-colored-section {
+        height: 100vh;
+        padding: 50px 5%;
+    }
 
+    h1, h2 {
+        float: none;
+        text-align: center !important;
+    }
+
+    #index-div h2 {
+        margin-bottom: 15%;
+        margin-top: 50px;
+    }
+
+    #index-div img {
+        display: block;
+        margin: 0 auto 0 auto;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
 }
 
 /* Medium devices (landscape tablets, 768 px and up)*/
@@ -100,7 +146,7 @@ h2 {
 }
 
 /* Large devices (laptops/dekstops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024) {
     #menu {
         display: block;
     }
