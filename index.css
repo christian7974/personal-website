@@ -85,26 +85,13 @@ h2 {
     clear: left;
 }
 
-#lang-side, #framework-side {
-    border-radius: 10px;
-    background-color: blue;
-    display: inline;
-    color: white;
-    padding: 0 20px;
-    font-size: calc(.75rem + 1vw);;
-}
-
-#lang-side:hover, #framework-side:hover {
-    background-color: rgb(5, 5, 174);
-    cursor: url(assets/cursor_click.png), auto;
-}
-
 
 #skills-container {
     margin: 25px auto 0 auto;
     display: table;
-    border-spacing: 50px;
     width: 100%;
+    border-collapse: separate;
+    border-spacing: 50px;
 }
 
 .skills-row {
@@ -118,34 +105,36 @@ h2 {
 
 .individual-skill img {
     height: 100px;
+    transition: transform .3s;
+}
+
+.individual-skill img:hover {
+    transform: scale(1.2);
 }
 
 /* "Weakest" skill */
-.novice-skill {
+.beginner-skill {
     filter: drop-shadow(10px 10px 5px red);
 }
 
 /* Medium skill */
-.proficient-skill {
+.intermediate-skill {
     filter: drop-shadow(10px 10px 5px yellow);
 }
 
 /* Strongest skill */
-.expert-skill {
+.proficient-skill {
     filter: drop-shadow(10px 10px 5px green);
 }
 
-.individual-skill img:hover {
-    scale: 1.5;
-}
-
 .individual-skill p {
-    display: none;
+    margin-top: 15px;
+    visibility: hidden;
+    font-size: calc(.2rem + 1vw);;
 }
 
 .individual-skill img:hover ~ p {
-    margin-top: 30px;
-    display: block;
+    visibility: visible;
 }
 
 
