@@ -81,7 +81,7 @@ h2 {
 
 #slider {
     width: max-content;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 20px auto;
     clear: left;
 }
 
@@ -99,62 +99,55 @@ h2 {
     cursor: url(assets/cursor_click.png), auto;
 }
 
+
 #skills-container {
+    margin: 25px auto 0 auto;
+    display: table;
+    border-spacing: 50px;
     width: 100%;
-    margin-top: 50px;
 }
 
 .skills-row {
-    display: flex;
-    margin: 50px 10px;
+    display: table-row;
 }
 
 .individual-skill {
-    position: relative;
-    margin-right: 200px;
+    display: table-cell;
+    text-align: center;
+}
+
+.individual-skill img {
+    height: 100px;
+}
+
+/* "Weakest" skill */
+.novice-skill {
+    filter: drop-shadow(10px 10px 5px red);
+}
+
+/* Medium skill */
+.proficient-skill {
+    filter: drop-shadow(10px 10px 5px yellow);
+}
+
+/* Strongest skill */
+.expert-skill {
+    filter: drop-shadow(10px 10px 5px green);
+}
+
+.individual-skill img:hover {
+    scale: 1.5;
 }
 
 .individual-skill p {
     display: none;
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-    left: 5px;
-    right: 0;
-    /* visibility: hidden; */
-    font-size: calc(.25rem + 1vw);
-    height: max-content;
-    width: max-content;
 }
 
-.individual-skill img {
-    display: block;
-    width: 100%;
-}
-
-.novice-skill {
-    width: 10%;
-    max-width: 150px;
-}
-
-.individual-skill img:hover {
-    opacity: 40%;
-}
-
-.individual-skill img:hover + p {
-    /* visibility: visible; */
+.individual-skill img:hover ~ p {
+    margin-top: 30px;
     display: block;
 }
 
-.proficient-skill {
-    width: 15%;
-    max-width: 175px;
-}
-
-.expert-skill {
-    width: 25%;
-    max-width: 200px;
-}
 
 /* Styling Portfolio Div */
 .project {
