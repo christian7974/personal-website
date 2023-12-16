@@ -156,17 +156,59 @@ h3 {
 
 
 /* Styling Portfolio Div */
-.project {
-    width: max-content;
+
+.timeline {
+    position: relative;
+    width: 100%;
+    margin: 250px auto;
+    height: 2px; /* Adjust the thickness of the line */
+    background-color: #333;
+}
+
+.tick-mark {
+    position: absolute;
+    width: 2px; /* Adjust the thickness of the tick marks */
+    height: 20px; /* Adjust the length of the tick marks */
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-photo {
+    width: 10vw; /* Adjust the width of the event photo */
+    min-width: 80px;
+    height: auto; /* Adjust the height of the event photo */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Adjust the distance from the timeline */
+    position: absolute;
+    top: -100px; /* Adjust the distance above the horizontal line */
+    transition: transform .3s;
+}
+
+.date, .event-title, .event-description {
+    /* font-size: 25px; */
+    color: #333;
     text-align: center;
-    max-width: 750px;
-    display: inline-block;
+    width: max-content; 
 }
 
-.project:nth-child(3) {
-    float: right;
+.date {
+    margin-top: 25px; /* Adjust the distance from the tick-mark */
+    font-size: calc(.25rem + 1vw);
 }
 
+.event-title {
+    margin-top: 10px; /* Adjust the distance from the date */
+    font-size: calc(.5rem + 1vw);
+}
+
+.event-description {
+    margin-top: 10px;
+    text-align: left;
+    font-size: calc(.2rem + 1vw);
+    width: 200px;
+}
 
 /* Making sure everything is sized right*/
 /* Extra small devices (phones, 600px and down) */
@@ -205,16 +247,46 @@ h3 {
     .individual-skill img {
         height: 75px;
     }
+
+    .event-description {
+        display: none;
+    }
+
+    .event-title {
+        width: fit-content;
+    }
+
+    .event-photo {
+        top: -50px; /* Adjust the distance above the horizontal line */
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 1025px) {
 
+    .blue-colored-section, .pink-colored-section {
+        height: 100vh;
+        padding: 2% 5% 0 5%;
+    }
+
+    .event-description {
+        display: none;
+    }
+
+    .event-title {
+        width: fit-content;
+    }
+
+    .event-photo {
+        top: -50px; /* Adjust the distance above the horizontal line */
+    }
 }
 
 /* Medium devices (landscape tablets, 768 px and up)*/
 @media only screen and (min-width: 768px) {
-    
+    .event-photo:hover {
+        transform: scale(2) translateY(-20px);
+    }
 }
 
 /* Large devices (laptops/dekstops, 992px and up) */
@@ -227,6 +299,9 @@ h3 {
         transform: scale(1.2);
     }
 
+    .event-photo:hover {
+        transform: scale(2) translateY(-20px);
+    }
 
     .individual-skill img:hover ~ p {
         visibility: visible;
