@@ -118,6 +118,9 @@
     </div>
     <div id="portfolio-div" class="blue-colored-section">
         <h1>Portfolio</h1>
+        <div id="github-header">
+            <h3>Click on a project title to be brought to the Github repository</h3>
+        </div>
         <div id="timeline-wrapper">
             <div class="timeline">
                 <div class="tick-mark" style="left: 10%;">
@@ -129,7 +132,7 @@
                 <div class="tick-mark" style="left: 37%;">
                     <img src="assets/portfolio/rum_repo_screenshot.png" alt="Event 1 Photo" class="event-photo">
                     <div class="date">November 2022</div>
-                    <a href="#" class="event-title" onclick="return false;">Lossy Image Compression</a>
+                    <a href="#" class="event-title" onclick="arithLinkPressed(); return false">Lossy Image Compression</a>
                     <div class="event-description">Assignment where we had to implement lossy image compression using the Discrete Cosine Transformation. Rust</div>
                 </div>
                 <div class="tick-mark" style="left: 64%;">
@@ -149,12 +152,36 @@
     </div>
     <div id="about-div" class="pink-colored-section">
         <h1>About Me</h1>
+        <div id="about-table">
+            <div class="about-row">
+                <h3>Education</h3>
+                <p>I am a senior at the University of Rhode Island planning to graduate in the Spring of 2024.</p>
+                <p>I have been an admin for the CS interest club Ram Hacks for two years (2021 - 2023).</p>
+                <p>I have also been a teaching assistant for multiple courses for 3 years (The Joy of Programming, Software Engineering).</p>
+            </div>
+            <div class="about-row">
+                <h3>Interests</h3>
+                <p>When I am not programming, I enjoy going to the gym and watching sports.</p>
+                <p>I am a Boston sports fan, my favorites being the Boston Celtics and Red Sox.</p>
+                <p>I also enjoy reading in my free time (My all-time favorite being Atomic Habits by James Clear).</p>
+            </div>
+            <div class="about-row">
+                <h3>Can't Stop Listening To</h3>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0Eq4BMgsdV6DkLSJfX8eBt?utm_source=generator&theme=0" width="max-content" height="100px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="about-row">
+                <h3>Currently Reading</h3>
+                <img src="assets/atomic_habits_cover.jpg" alt="">
+                <p id="book-title">Atomic Habits by James Clear</p>
+            </div>
+        </div>
     </div>
     <div id="contact-div" class="blue-colored-section">
         <h1>Contact Me</h1>
         <a target="_blank" href="https://icons8.com/icon/eqvTYaCnYmRN/3d-pointer">Cursor</a> icon by <a target="_blank"
             href="https://icons8.com">Icons8</a>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
