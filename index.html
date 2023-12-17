@@ -11,446 +11,205 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
-    
+
     <!-- CDN links, references to stylesheets -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="skills.css">
-    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"></script> -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div id="nav">
-        <img src="assets/map_icon.png" alt="" width="50px" id="map-icon">
-        <div id="nav-content">
-            <a href="#title" class="nav-item">Home</a>
-            <a href="#portfolio" class="nav-item">Portfolio</a>
-            <a href="#skills" class="nav-item">Skills</a>
-            <a href="#about-me" class="nav-item">About Me</a>
-            <a href="#contact-me" class="nav-item">Contact Me</a>
+    <div id="menu">
+        <a href="#index-div">Index</a>
+        <a href="#skills-div">Skills</a>
+        <a href="#portfolio-div">Portfolio</a>
+        <a href="#about-div">About</a>
+        <a href="#contact-div">Contact</a>
+    </div>
+    <div id="index-div" class="blue-colored-section">
+        <h1>Christian Tropeano</h1>
+        <h2>CS Student @ URI</h2>
+        <img src="assets/personal_website_cover_photo.jpeg" alt="An image of me with my arms crossed">
+    </div>
+    <div id="skills-div" class="pink-colored-section">
+        <h1>Skills</h1>
+        <div id="proficiency-scale">
+            <h3>Beginner</h3>
+            <h3>Intermediate</h3>
+            <h3>Proficient</h3>
+        </div>
+        <div id="skills-container-wrapper">
+            <div id="skills-container">
+                <div class="skills-row">
+                    <div class="individual-skill">
+                        <img src="assets/skills/languages/ferris_rust.png" alt="" class="beginner-skill">
+                        <p>Rust</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/languages/js_logo.png" alt="" class="proficient-skill">
+                        <p>Javascript</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/languages/c++_logo.png" alt="" class="intermediate-skill">
+                        <p>C++</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/languages/html_css_logo.jpg" alt="" class="proficient-skill">
+                        <p>HTML/CSS</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/languages/python_logo.png" alt="" class="proficient-skill">
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="skills-row">
+                    <div class="individual-skill">
+                        <img src="assets/skills/frameworks/ejs_logo.png" alt="" class="beginner-skill">
+                        <p>EJS</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/frameworks/jquery_logo.svg" alt="" class="intermediate-skill">
+                        <p>JQuery</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/frameworks/bootstrap_logo.png" alt="" class="beginner-skill">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/frameworks/nodejs_logo.png" alt="" class="proficient-skill">
+                        <p>Node JS</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/frameworks/smaller_express_logo.png" alt="" class="beginner-skill">
+                        <p>Express.js</p>
+                    </div>
+                </div>
+                <div class="skills-row">
+                    <div class="individual-skill">
+                        <img src="assets/skills/other/dom_logo.png" alt="" class="intermediate-skill">
+                        <p>Document Object Model</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/other/git_logo.png" alt="" class="proficient-skill">
+                        <p>Git</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/other/oop.png" alt="" class="intermediate-skill">
+                        <p>Object Oriented Programming</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/other/github_logo.png" alt="" class="proficient-skill">
+                        <p>Github</p>
+                    </div>
+                    <div class="individual-skill">
+                        <img src="assets/skills/other/mongodb_logo.jpg" alt="" class="beginner-skill">
+                        <p>MongoDB</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <section id="title" class="dark-colored-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="home">Welcome!<br><br>My name is Christian Tropeano!</h1>
+    <div id="portfolio-div" class="blue-colored-section">
+        <h1>Portfolio</h1>
+        <div id="github-header">
+            <h3>Click on a project title to be brought to the Github repository</h3>
+        </div>
+        <div id="timeline-wrapper">
+            <div class="timeline">
+                <div class="tick-mark" style="left: 10%;">
+                    <img src="assets/portfolio/convex_hull_example.jpg" alt="Event 1 Photo" class="event-photo">
+                    <div class="date">Oct-Dec 2021</div>
+                    <a href="https://github.com/christian7974/convexHull" target="_blank" class="event-title">Convex Hull</a>
+                    <div class="event-description">Data Structures and Abstractions course final project where we had to implement Graham's Scan. C++</div>
                 </div>
-                <div class="col-lg-6 cover-photo-col">
-                    <img src="assets/personal_website_cover_photo.jpeg" class="cover-photo" alt="Image of me in a beige sweater with my arms crossed.">
+                <div class="tick-mark" style="left: 37%;">
+                    <img src="assets/portfolio/rum_repo_screenshot.png" alt="Event 1 Photo" class="event-photo">
+                    <div class="date">November 2022</div>
+                    <a href="#" class="event-title" onclick="arithLinkPressed(); return false">Lossy Image Compression</a>
+                    <div class="event-description">Assignment where we had to implement lossy image compression using the Discrete Cosine Transformation. Rust</div>
+                </div>
+                <div class="tick-mark" style="left: 64%;">
+                    <img src="assets/portfolio/ncaa_logo.jpeg" alt="Event 1 Photo" class="event-photo">
+                    <div class="date">August 2023</div>
+                    <a href="https://github.com/christian7974/College-Basketball-API" target="_blank" class="event-title">College Basketball API</a>
+                    <div class="event-description">API that I created that returns statistics from NCAA Men's D1 Basketball teams. JS, Node.js, Express.js, MongoDB</div>
+                </div>
+                <div class="tick-mark" style="left: 90%;">
+                    <img src="assets/portfolio/gonzaga_oral_roberts.png" alt="Event 1 Photo" class="event-photo">
+                    <div class="date">August 2023</div>
+                    <a href="https://github.com/christian7974/March-Madness-Tool" target="_blank" class="event-title">March Madness Tool</a>
+                    <div class="event-description">Frontend for the College Basketball API that I created that compares the statistics of two teams. HTML, CSS, EJS</div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="portfolio" class="light-colored-section">
-        <div class="container-fluid">
-            <h1 class="portfolio-header">Portfolio</h1>
-
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                    <img src="assets/rum_repo_screenshot.png" style="width:100%;height:400px" alt="An image of the Arith repository on Github">
-                    <div class="caption">Implemented a lightweight version of JPEG using the Discrete Cosine
-                        Transformation
-                        Formula. Since this project is still being assigned, please <a href="#contact-me">contact me</a>
-                        for more questions on the assignment.</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <a href="https://github.com/christian7974/March-Madness-Tool" target="_blank"><img
-                            src="assets/gonzaga_oral_roberts.png" style="width:100%;height:400px" alt="Image of the March Madness Tool being used to compare Gonzaga and Oral Roberts."></a>
-                    <div class="caption">Created a tool that compares two NCAA DI Basketball Teams to help me create a bracket for 
-                        March Madness. Uses an <a href="https://github.com/christian7974/College-Basketball-API" target="_blank">API that I 
-                            also made.</a></div>
-                </div>
-
-                <div class="mySlides fade">
-                    <a href="https://github.com/christian7974/Convex-Hull" target="_blank"><img
-                            src="assets/convex_hull_example.jpg" style="width:100%;height:400px" alt="An image of an example convex hull with red points connected with black lines."></a>
-                    <div class="caption">Implemented the Graham Scan algorithm to find the Convex Hull of a set of
-                        points
-                        in C++.</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div id="about-div" class="pink-colored-section">
+        <h1>About Me</h1>
+        <div id="about-table">
+            <div class="about-row">
+                <h3>Education</h3>
+                <p>I am a senior at the University of Rhode Island planning to graduate in the Spring of 2024.</p>
+                <p>I have been an admin for the CS interest club Ram Hacks for two years (2021 - 2023).</p>
+                <p>I have also been a teaching assistant for multiple courses for 3 years (The Joy of Programming, Software Engineering).</p>
             </div>
-            <br>
-
-            <div style="text-align:center" id="dots-row">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+            <div class="about-row">
+                <h3>Interests</h3>
+                <p>When I am not programming, I enjoy going to the gym and watching sports.</p>
+                <p>I am a Boston sports fan, my favorites being the Boston Celtics and Red Sox.</p>
+                <p>I also enjoy reading in my free time (My all-time favorite being Atomic Habits by James Clear).</p>
             </div>
-            <h2 class="portfolio-footer">Here are some projects that I have worked on. Click on one to be directed to
-                the
-                Github repository for that project. </h2>
-
-            <div id="simple-portfolio">
-                <h2 class="simple-portfolio">Click on a project to be brought to the Github Repository for that project.
-                </h2>
-
-                <a href="https://github.com/christian7974/arith">
-                    <h5>Lossy Image Compression in Rust</h5>
-                </a>
-                <p>Implemented a lightweight version of JPEG using the Discrete Cosine Transformation
-                    Formula.</p>
-                <img src="assets/rum_repo_screenshot.png" class="d-block" alt="An image of the Arith repository on Github">
-
-                <a href="https://github.com/christian7974/March-Madness-Tool">
-                    <h5>March Madness Tool</h5>
-                </a>
-                <p>Created a tool that compares two NCAA DI Basketball Teams to help me create a bracket for 
-                    March Madness. Uses an <a href="https://github.com/christian7974/College-Basketball-API" target="_blank">API that I 
-                        also made.</a></p>
-                <img src="assets/gonzaga_oral_roberts.png" alt="Image of the March Madness Tool being used to compare Gonzaga and Oral Roberts.">    
-
-                <a href="https://github.com/christian7974/Convex-Hull">
-                    <h5>Convex Hull</h5>
-                </a>
-                <p>Implemented the Graham Scan algorithm to find the Convex Hull of a set of points in C++.</p>
-                <img src="assets/convex_hull_example.jpg" class="d-block" alt="An image of an example convex hull with red points connected with black lines.">        
+            <div class="about-row">
+                <h3>Can't Stop Listening To</h3>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0Eq4BMgsdV6DkLSJfX8eBt?utm_source=generator&theme=0" width="max-content" height="100px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="about-row">
+                <h3>Currently Reading</h3>
+                <img src="assets/atomic_habits_cover.jpg" alt="">
+                <p id="book-title">Atomic Habits by James Clear</p>
             </div>
         </div>
+    </div>
+    <div id="contact-div" class="blue-colored-section">
+        <h1>Contact Me</h1>
+        <div id="contact-content">
+            <div class="contact-col">
+                <h4>Thanks!</h4>
+                <p>Thank you for visiting my website and learning more about me! If you would like to chat, don't hesitate to email me at:</p>
+                <p><a href="mailto:christian.tropeano1@gmail.com" id="email" target="_blank">christian.tropeano1@gmail.com</a></p>
 
-    </section>
-
-    <section id="skills" class="dark-colored-section">
-        <div class="container-fluid">
-
-            <h1 class="skills-header">Skills</h1>
-
-            <div class="row" id="skills-button">
-                <div class="btn-group" role="group" aria-label="Basic example" id="languages-frameworks-btn-group">
-                    <button type="button" class="btn btn-light" id="languages-btn">Langauges</button>
-                    <button type="button" class="btn btn-light" id="frameworks-btn">Frameworks</button>
-                    <button type="button" class="btn btn-light" id="other-skills-btn">Other Technologies</button>
-                </div>
+                <p><a href="https://docs.google.com/document/d/1QccD-QtopnuSShMNlUV7joSSHz1U6WgbwAS_eqQvGGQ/edit?usp=sharing" target="_blank">Here is a link to my resume</a></p>
             </div>
-            <div class="row">
-                <div id="skills-in-languages">
-                    <div class="language-pictures-column">
-                        <img src="assets/skills/languages/python_logo.png" class="skills-picture" alt="Image of the Python Logo">
-                        <img src="assets/skills/languages/c++_logo.png" class="skills-picture"
-                            alt="Icon of the logo for C Plus Plus">
-                        <img src="assets/skills/languages/ferris_rust.png" class="skills-picture"
-                            alt="An image of the Programming Langauge Rust's mascot, Ferris">
-                        <img src="assets/skills/languages/html_css_logo.jpg" class="skills-picture"
-                            alt="An image consisting of the logos for HTML and CSS">
-                        <img src="assets/skills/languages/js_logo.png" class="skills-picture" alt="The logo for Javascript">
-                        <img src="assets/skills/languages/nosql_logo.webp" class="skills-picture" alt="A white box that says 'NoSQL' inside of it">
 
-                    </div>
-                    <div class="axes">
-                        <div class="y-axis taller-axis">
-
-                        </div>
-                        <!-- Proficiency Bars -->
-                        <div class="x-axis-languages">
-                            <div id="python-skill-bar" class="skill-bar"></div>
-                            <div id="cpp-skill-bar" class="skill-bar"></div>
-                            <div id="rust-skill-bar" class="skill-bar"></div>
-                            <div id="html-skill-bar" class="skill-bar"></div>
-                            <div id="js-skill-bar" class="skill-bar"></div>
-                            <div id="nosql-skill-bar" class="skill-bar"></div>
-                        </div>
-                        <div class="x-axis-labels">
-                            <div id="novice-label">Novice</div>
-                            <div id="proficient-label">Proficient</div>
-                            <div id="expert-label">Expert</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="skills-in-frameworks">
-                    <div class="language-pictures-column"> <!-- Put pictures, names of languages here -->
-                        <img src="assets/skills/frameworks/express_logo.webp" class="skills-picture"
-                            alt="Image of the logo for Express JS.">
-                        <img src="assets/skills/frameworks/bootstrap_logo.png" class="skills-picture"
-                            alt="The logo for the CSS Framework Bootstrap">
-                        <img src="assets/skills/frameworks/nodejs_logo.png" class="skills-picture"
-                            alt="The logo for Node.js">
-                        <img src="assets/skills/frameworks/jquery_logo.svg" class="skills-picture"
-                            alt="The logo for the JS framework JQuery">
-                    </div>
-                    <div class="axes">
-                        <div class="y-axis">
-
-                        </div>
-                        <div class="x-axis-frameworks">
-                            <div id="express-skill-bar" class="skill-bar"></div>
-                            <div id="bootstrap-skill-bar" class="skill-bar"></div>
-                            <div id="node-skill-bar" class="skill-bar"></div>
-                            <div id="jquery-skill-bar" class="skill-bar"></div>
-                        </div>
-                        <div class="x-axis-labels">
-                            <div id="novice-label">Novice</div>
-                            <div id="proficient-label">Proficient</div>
-                            <div id="expert-label">Expert</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="other-skills">
-                    <div class="language-pictures-column"> <!-- Put pictures, names of languages here -->
-                        <img src="assets/skills/other/github_logo.png" class="skills-picture"
-                            alt="Silhouette of the logo for Github">
-                        <img src="assets/skills/other/git_logo.png" class="skills-picture" alt="The logo for Git">
-                        <img src="assets/skills/other/oop.png" class="skills-picture"
-                            alt="An image of a blue square that says 'Object Oriented Programming' ">
-                        <img src="assets/skills/other/dom_logo.png" class="skills-picture"
-                            alt="An image of an orange square that says Document Object Model">
-                        <img src="assets/skills/other/mongodb_logo.jpg" class="skills-picture" alt="Image of the MongoDB logo">
-                    </div>
-                    <div class="axes">
-                        <div class="y-axis">
-
-                        </div>
-                        <div class="x-axis-other-skills">
-                            <div id="github-skill-bar" class="skill-bar"></div>
-                            <div id="git-skill-bar" class="skill-bar"></div>
-                            <div id="oop-skill-bar" class="skill-bar"></div>
-                            <div id="dom-skill-bar" class="skill-bar"></div>
-                            <div id="mongo-skill-bar" class="skill-bar"></div>
-                        </div>
-                        <div class="x-axis-labels">
-                            <div id="novice-label">Novice</div>
-                            <div id="proficient-label">Proficient</div>
-                            <div id="expert-label">Expert</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skills page that will appear if website viewed on phone/tablet -->
-                <div id="simple-skills">
-                    <h4>Languages:</h4>
-                    <ul>
-                        <li>Python</li>
-                        <li>C++</li>
-                        <li>Rust</li>
-                        <li>JS</li>
-                        <li>HTML/CSS</li>
-                        <li>NoSQL</li>
-                    </ul>
-                    <h4>Frameworks:</h4>
-                    <ul>
-                        <li>Bootstrap</li>
-                        <li>JQuery</li>
-                        <li>Express</li>
-                        <li>Node.js</li>
-                    </ul>
-                    <h4>Other Skills:</h4>
-                    <ul>
-                        <li>Github</li>
-                        <li>Git</li>
-                        <li>Document Object Model (DOM)</li>
-                        <li>OOP</li>
-                        <li>MongoDB</li>
-                    </ul>
-
-                </div>
-
+            <div class="contact-col">
+                <h4>How I made my website:</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Hosted on Github Pages</li>
+                    <li>Used Git for version control</li>
+                    <li>Domain from Google Domains</li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <section id="about-me" class="light-colored-section">
-        <div class="container-fluid">
-            <div class="row">
-                <h1 class="about-me-header">About Me</h1>
-            </div>
-            <div class="row" id="about-me-content">
-                <div class="col-lg-6">
-                    <div class="row about-me-body">
-                        <h2>Education</h2>
-                        <p>I am a rising senior at the University of Rhode Island studying Computer Science. After I
-                            finish my undergraduate studies, I am unsure whether I want to go to graduate school or work
-                            in industry.</p>
-                        <p>I was an administrator for the Computer Science Interest Club known as <i>Ram Hacks</i> for 2
-                            years where I gained valuable communication and leadership skills.</p>
-                        <p>I have been a Teaching Assistant for multiple classes throughout my college career (The
-                            Joy of Programming, Software Engineering).</p>
-                    </div>
-                    <div class="row about-me-body">
-                        <!-- MLA Citation for Atomic Habits by James Clear: "Clear, James. Atomic Habits: Tiny Changes, Remarkable Results : An Easy & Proven Way to Build Good Habits & Break Bad Ones. New York, New York, Avery, an imprint of Penguin Random House, 2018." -->
-                        <h2>Currently Reading</h2>
-                        <div id="simple-book">
-                            <img src="assets/atomic_habits_cover.jpg"
-                                alt="The front cover of the book Atomic Habits by James Clear." id="ah-book">
-                        </div>
-                        <div class="flip-card" id="book-currently-reading">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="assets/atomic_habits_back.jpg"
-                                        alt="The back cover of the book Atomic Habits by James Clear.">
-                                </div>
-                                <div class="flip-card-back">
-                                    <img src="assets/atomic_habits_cover.jpg"
-                                        alt="The front cover of the book Atomic Habits by James Clear.">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row about-me-body">
-                        <h2>Interests</h2>
-                        <p>When I am not in school, I enjoy going to the gym and watching sports.</p>
-                        <p>I am a fan of Boston sports, particularly the Celtics and Red Sox.</p>
-                        <p>I also enjoy reading (my current book being on the bottom left.)</p>
-                        <p>Aside from the song below, I enjoy listening to Rock, Jazz, Country and Rap (I will listen to
-                            practically anything).</p>
-                    </div>
-                    <div class="row about-me-body">
-                        <h2>Can't Stop Listening To</h2>
-                        <!-- <p>"Never Be The Same" by Christopher Cross</p> -->
-                        <!-- <div id="spinning-record"><img src="assets/christopher_cross_vinyl.png" id="vinyl-image"
-                                class="rotate" alt="A vinyl of Christopher Cross' self-named album.">
-                        </div> -->
-                        <iframe id="spotify-album-widget"
-                            src="https://open.spotify.com/embed/track/4Z2015s3noJJ7IRydu7ozr?utm_source=generator&theme=0"
-                            frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <footer>
+        <div id="socials-row">
+            <a href="https://github.com/christian7974" target="_blank"><img src="assets/icons/github_icon.png" alt=""></a>
+            <a href="https://www.instagram.com/christiantropeano7/" target="_blank"><img src="assets/icons/instagram_icon.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/christiantropeano/" target="_blank"><img src="assets/icons/linkedin_icon.png" alt=""></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fchristiantrop97" target="_blank"><img src="assets/icons/twitter_icon.png" alt=""></a>
         </div>
-    </section>
-
-    <section id="contact-me" class="dark-colored-section">
-        <div class="container-fluid">
-            <div class="row">
-                <h1 class="contact-header">Thank you for visiting! Let's chat!</h1>
-            </div>
-            <div class="row contact-me-row">
-                <div class="col-lg-6" id="form-column">
-                    <h3><label for="emailInput" class="email-form-label">Email address:</label></h3>
-                    <input type="email" class="form-control" placeholder="name@example.com" id="user-email">
-
-                    <h3><label for="textareaInput" class="comments-form-label">Write Away!</label></h3>
-                    <textarea class="form-control" rows="5" placeholder="Questions? Comments? Concerns?"
-                        id="comments-area"></textarea>
-                    <br>
-                    <button type="button" class="btn btn-light" id="submit-button">Submit</button>
-                    <div id="submission-message"></div>
-                </div>
-                <div class="col-lg-6 contact-info">
-                    <h3>You can also contact me at:</h3>
-                    <a href="mailto:christian.tropeano1@gmail.com">
-                        <h3 id="email">christian.tropeano1@gmail.com</h3>
-                    </a>
-                    <br>
-                    <h3>What I Used to Make Website:</h3>
-                    <ul>
-                        <li>HTML/CSS</li>
-                        <li>Bootstrap</li>
-                        <li>Document Object Model (DOM)</li>
-                        <li>JQuery</li>
-                    </ul>
-                    <a href="https://docs.google.com/document/d/1QccD-QtopnuSShMNlUV7joSSHz1U6WgbwAS_eqQvGGQ/edit?usp=sharing"
-                        target="_blank">
-                        <h3>Link To Resumé</h3>
-                    </a>
-
-                </div>
-            </div>
-            <footer id="footer">
-                <div class="container icon-bar">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <a href="https://github.com/christian7974" target="_blank"><img
-                                    src="assets/icons/github_icon.png" alt="A silhouette of the Github Logo."
-                                    class="social-icon"></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="https://www.linkedin.com/in/christiantropeano/" target="_blank"><img
-                                    src="assets/icons/linkedin_icon.png"
-                                    alt="The logo for the networking website LinkedIn." class="social-icon"></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="https://www.instagram.com/christiantropeano7/" target="_blank"><img
-                                    src="assets/icons/instagram_icon.png"
-                                    alt="The logo for the social media application Instagram." class="social-icon"></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="https://www.twitter.com/christiantrop97" target="_blank"><img
-                                    src="assets/icons/twitter_icon.png"
-                                    alt="A silhouette for Twitter with Larry Bird as white." class="social-icon"></a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </section>
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <a target="_blank" href="https://icons8.com/icon/eqvTYaCnYmRN/3d-pointer">Cursors</a> by <a target="_blank"
+        href="https://icons8.com">Icons8</a>
+    </footer>
     <script src="index.js"></script>
-    <script type="module">
-        const submit_message = document.getElementById("submission-message");
-
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyCJLGCBOxWr1mvSx7Yj0q9JaGIF2uo4iTc",
-            authDomain: "personal-website-f95b4.firebaseapp.com",
-            projectId: "personal-website-f95b4",
-            storageBucket: "personal-website-f95b4.appspot.com",
-            messagingSenderId: "561358323235",
-            appId: "1:561358323235:web:cc67418bbc480b6476bb96"
-        };
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        import { getDatabase, set, get, update, remove, ref, child } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
-        const db = getDatabase();
-
-        var email_field = document.getElementById("user-email");
-        var comments_field = document.getElementById("comments-area");
-
-        const submit_button = document.querySelector("#submit-button");
-        function InsertData() {
-            email_field.classList.remove("invalid-email");
-            // Regular expression for a valid Email address
-            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-            if (email_field.value.match(validRegex)) {
-                set(ref(db, "Emails/" + email_field.value.replace('.', '_')), {
-                    email: email_field.value,
-                    whatTheySaid: comments_field.value
-                })
-                    .then(() => {
-                        submit_message.style.display = 'block';
-                        submit_message.textContent = "Thanks for submitting!";
-                        email_field.value = "";
-                        comments_field.value = "";
-
-                    })
-                    .catch((error) => {
-                        alert(error)
-                    });
-            } else {
-                email_field.classList.add("invalid-email");
-                submit_message.style.display = 'block';
-                submit_message.textContent = "Please enter a valid email.";
-                return false;
-            }
-
-
-        }
-        submit_button.addEventListener('click', InsertData);
-    </script>
-
 </body>
 
 </html>
