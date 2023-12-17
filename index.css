@@ -12,7 +12,7 @@
     padding: 0;
 }
 
-a:hover {
+a:hover, #socials-row img {
     cursor: url(assets/cursor_click.png), auto;
 }
 
@@ -41,6 +41,9 @@ h3 {
     font-size: calc(1.5rem + 1vw);
 }
 
+h4 {
+    font-size: calc(1.25rem + 1vw);
+}
 #menu {
     display: none;
     background-color: white;
@@ -62,6 +65,10 @@ h3 {
     display: block;
     padding-bottom: 10px;
     background-color: red;
+}
+
+ul {
+    list-style-position: inside;
 }
 
 /* Styling the Index Div */
@@ -261,8 +268,66 @@ h3 {
 #book-title {
     visibility: hidden;
 }
+
+/* Styling Contact Page */
+
+#contact-div {
+    height: 83vh;
+}
+
+#contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-col {
+    width: 49%;
+    display: block;
+}
+
+.contact-col:nth-child(1) {
+    float: left;
+}
+
+.contact-col:nth-child(2) {
+    float: right;
+}
+
+.contact-col p, .contact-col li, .contact-col a {
+    font-size: calc(.2rem + 1vw);
+}
+
+.contact-col:nth-child(1) p {
+    padding-bottom: 10px;
+}
+
+#email {
+    font-size: calc(.4rem + 1vw);
+}
+
+footer {
+    /* height: 5vh; */
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #FFA69E;
+}
+
+#socials-row {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    text-align: justify;
+}
+
+#socials-row img {
+    height: 75px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
 /* Making sure everything is sized right*/
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) STRICTLY PHONES */
 @media only screen and (max-width: 600px) {
     .blue-colored-section, .pink-colored-section {
         height: 100vh;
@@ -354,6 +419,29 @@ h3 {
     #book-title {
         visibility: visible;
     }
+
+    #contact-div {
+        height: 80vh;
+    }
+
+    .contact-col {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .contact-col p, .contact-col a, #email, .contact-col li {
+        font-size: calc(.75rem + 1vw);
+    }
+
+    .contact-col:nth-child(1) {
+        margin-bottom: 50px;
+    }
+
+    #socials-row img {
+        height: 40px;
+        margin: 0 10px 0 10px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) STRICTLY IPADS */
@@ -395,6 +483,28 @@ h3 {
     .about-row:nth-child(4) {
         width: 100%;
         margin: 0;
+    }
+
+    .contact-col p, .contact-col a, #email, .contact-col li {
+        font-size: calc(1rem + 1vw);
+    }
+
+    #contact-div {
+        height: 90vh;
+    }
+
+    .contact-col {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .contact-col:nth-child(1) {
+        margin-bottom: 50px;
+    }
+
+    .about-row {
+        margin-bottom: 30px;
     }
 }
 
