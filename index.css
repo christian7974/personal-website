@@ -364,6 +364,18 @@ footer {
         height: 75px;
     }
 
+    #proficiency-scale h3:nth-child(1) {
+        text-shadow: 2px 2px 2px red;
+    }
+    
+    #proficiency-scale h3:nth-child(2) {
+        text-shadow: 2px 2px 2px yellow;
+    }
+    
+    #proficiency-scale h3:nth-child(3) {
+        text-shadow: 2px 2px 2px green;
+    }
+
     .event-description {
         display: none;
     }
